@@ -1,0 +1,149 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1098.4,979.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sxl="clr-namespace:System.Xml.Linq;assembly=System.Xml.Linq" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Exposure Amounts" sap:VirtualizedContainerService.HintSize="467.2,914.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Xml Acivities" sap:VirtualizedContainerService.HintSize="425.6,821.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sxl:XDocument" Name="doc" />
+        <Variable x:TypeArguments="x:Int32" Name="kv" />
+        <Variable x:TypeArguments="x:Int32" Name="uv" />
+        <Variable x:TypeArguments="x:String" Name="xmlText" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadTextFile DisplayName="Read Text File" FileName="Response\\resp_guncel.xml" sap:VirtualizedContainerService.HintSize="384,80.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+        <ui:ReadTextFile.Content>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">xmlText</mca:CSharpReference>
+          </OutArgument>
+        </ui:ReadTextFile.Content>
+      </ui:ReadTextFile>
+      <ui:DeserializeXml DisplayName="Deserialize XML" sap:VirtualizedContainerService.HintSize="384,60" sap2010:WorkflowViewState.IdRef="DeserializeXml_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:DeserializeXml.XMLDocument>
+          <OutArgument x:TypeArguments="sxl:XDocument">
+            <mca:CSharpReference x:TypeArguments="sxl:XDocument" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">doc</mca:CSharpReference>
+          </OutArgument>
+        </ui:DeserializeXml.XMLDocument>
+        <ui:DeserializeXml.XMLString>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">xmlText</mca:CSharpValue>
+          </InArgument>
+        </ui:DeserializeXml.XMLString>
+      </ui:DeserializeXml>
+      <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Response dosyasının içindeki Xml dosyasında bulunan&#xA;creditTypesList.creditType 'ı 120 ve 200 olan node'ları alır.    &#xA;&#xA;kv = KısaVadeli: Amount06 +Amount612 &#xA;uv = Uzun Vadeli: totalExposure - KısaVadeli " Code="XDocument doc = in_doc;&#xA;XNamespace ns2 = &quot;http://isbank.com/FinancialMgmt/CustCreditDecisioning/CMAFinancialsIntegration/Service/V1&quot;;&#xA;&#xA;// Sadece 120 ve 200'ü hesaplar içinde dönmesini bekliyoruz&#xA;var creditValue = new List&lt;string&gt;() { &quot;120&quot;, &quot;200&quot;};&#xA;&#xA;string exposureAmount06 = null;&#xA;string exposureAmount612 = null;&#xA;string totalExposure = null;&#xA;&#xA;//Eğer 120 ve 200 nolu hesaplar yoksa uv ve kv değerleri default olarak &quot;0&quot; olur&#xA;//uv = Uzun Vadeli = totalExposure - KısaVadeli&#xA;//kv = KısaVadeli = exposureAmount06 + exposureAmount612 &#xA;int kv = 0;&#xA;int uv = 0;&#xA;&#xA;//Daha önceden liste (creditValue isimli liste) halinde verilmiş credit type'lar içinde dönen loop (120 ve 200 nolu hesaplara bakar)          &#xA;foreach (var value in creditValue)&#xA;            {&#xA;                  var creditTypesList = (from node in doc.Descendants(ns2 + &quot;creditTypesList&quot;)&#xA;                                                    where node.Element(ns2 + &quot;creditType&quot;).Value == value&#xA;                                                    select node);&#xA;&#xA;                &#xA;                //İlgili node'un içinde Total exposure, Amount06 ve Amount612 değerlerini bulur &#xA;                foreach (var element in creditTypesList)&#xA;                {&#xA;                        &#xA;                        exposureAmount06 = element.Element(ns2 + &quot;exposureAmount06&quot;).Value;                        &#xA;                        exposureAmount612 = element.Element(ns2 + &quot;exposureAmount612&quot;).Value;&#xA;                        totalExposure = element.Element(ns2 + &quot;totalExposure&quot;).Value;&#xA;&#xA;                        Console.WriteLine(&quot;Credit Type : &quot; + value);&#xA;                        Console.WriteLine(&quot;exposureAmount06 : &quot; + exposureAmount06);&#xA;                        Console.WriteLine(&quot;exposureAmount612 : &quot; + exposureAmount612);&#xA;                        Console.WriteLine(&quot;Total Exposure : &quot; + totalExposure);&#xA;&#xA;                        //kv = KısaVadeli: exposureAmount06 + exposureAmount612 &#xA;                        kv = Convert.ToInt32(exposureAmount06) + Convert.ToInt32(exposureAmount612);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;   &#xA;&#xA;                        //uv = Uzun Vadeli: totalExposure - KısaVadeli&#xA;                        uv = Convert.ToInt32(totalExposure) - kv;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;    &#xA;&#xA;                }&#xA;                     &#xA;            }&#xA;                      &#xA;out_kv = kv;&#xA;out_uv = uv;&#x9;&#x9;" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="384,272.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="sxl:XDocument" x:Key="in_doc">
+            <mca:CSharpValue x:TypeArguments="sxl:XDocument" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">doc</mca:CSharpValue>
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="out_kv">
+            <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">kv</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="out_uv">
+            <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">uv</mca:CSharpReference>
+          </OutArgument>
+        </ui:InvokeCode.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeCode>
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="384,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3">
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">"KısaVadeli(kv) : " + kv + Environment.NewLine + "UzunVadeli(uv) : " + uv</mca:CSharpValue>
+        </InArgument>
+      </WriteLine>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="384,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"Response Okundu"</mca:CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+    </Sequence>
+  </Sequence>
+</Activity>
